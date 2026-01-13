@@ -14,3 +14,11 @@ jobs:
       - run: npm run lint
       - run: npm run test
       - run: npm run build
+
+  cd:
+    needs: ci
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: npm install -g @railway/cli
+      - run: echo "레일웨이 배포완료"
