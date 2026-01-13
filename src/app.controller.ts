@@ -12,6 +12,6 @@ export class AppController {
 
   @Get('/cicd')
   getCICD(): string {
-    return this.appService.getCICD('cicd_nest');
+    return this.appService.getCICD();
   }
 }

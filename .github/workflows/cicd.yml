@@ -23,5 +23,5 @@ jobs:
       - run: npm install -g @railway/cli
       - run: railway up --service=cicd_nest
         env:
-          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
+          RAILWAY_TOKEN: ${{secrets.RAILWAY_TOKEN }}
       - run: echo "레일웨이 배포완료"
